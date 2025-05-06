@@ -1,0 +1,112 @@
+[
+  {
+    "route_id": "1",
+    "route_name": "102STLDOWN",
+    "num_of_stops": 0,
+    "air_conditioned": 0,
+    "agency": "DIMTS",
+    "fare": 4.5,
+    "direction": "DOWN",
+    "start_stop_gps": "(28.718025, 77.0638)",
+    "end_stop_gps": "(28.698384, 77.097225)"
+  },
+  {
+    "route_id": "1",
+    "route_name": "102STLDOWN",
+    "num_of_stops": 0,
+    "air_conditioned": 1,
+    "agency": "DIMTS",
+    "fare": 9,
+    "direction": "DOWN",
+    "start_stop_gps": "(28.718025, 77.0638)",
+    "end_stop_gps": "(28.698384, 77.097225)"
+  },
+  {
+    "route_id": "1329",
+    "route_name": "102DOWN",
+    "num_of_stops": 0,
+    "air_conditioned": 0,
+    "agency": "DIMTS",
+    "fare": 4.5,
+    "direction": "DOWN",
+    "start_stop_gps": "(28.718025, 77.0638)",
+    "end_stop_gps": "(28.698384, 77.097225)"
+  },
+  {
+    "route_id": "1329",
+    "route_name": "102DOWN",
+    "num_of_stops": 0,
+    "air_conditioned": 1,
+    "agency": "DIMTS",
+    "fare": 9,
+    "direction": "DOWN",
+    "start_stop_gps": "(28.718025, 77.0638)",
+    "end_stop_gps": "(28.698384, 77.097225)"
+  },
+  {
+    "route_id": "5464",
+    "route_name": "EXPRESS-85AUP",
+    "num_of_stops": 0,
+    "air_conditioned": 0,
+    "agency": "DTC",
+    "fare": 18,
+    "direction": "UP",
+    "start_stop_gps": "(28.717917, 28.717917)",
+    "end_stop_gps": "(28.698384, 28.698384)"
+  },
+  {
+    "route_id": "5464",
+    "route_name": "EXPRESS-85AUP",
+    "num_of_stops": 0,
+    "air_conditioned": 1,
+    "agency": "DTC",
+    "fare": 27,
+    "direction": "UP",
+    "start_stop_gps": "(28.717917, 28.717917)",
+    "end_stop_gps": "(28.698384, 28.698384)"
+  },
+  {
+    "route_id": "5580",
+    "route_name": "247DOWN",
+    "num_of_stops": 0,
+    "air_conditioned": 0,
+    "agency": "DTC",
+    "fare": 9,
+    "direction": "DOWN",
+    "start_stop_gps": "(28.717917, 28.717917)",
+    "end_stop_gps": "(28.698384, 28.698384)"
+  },
+  {
+    "route_id": "5580",
+    "route_name": "247DOWN",
+    "num_of_stops": 0,
+    "air_conditioned": 1,
+    "agency": "DTC",
+    "fare": 13.5,
+    "direction": "DOWN",
+    "start_stop_gps": "(28.717917, 28.717917)",
+    "end_stop_gps": "(28.698384, 28.698384)"
+  },
+  {
+    "route_id": "5913",
+    "route_name": "0901(NS)DOWN",
+    "num_of_stops": 0,
+    "air_conditioned": 0,
+    "agency": "DTC",
+    "fare": 9,
+    "direction": "DOWN",
+    "start_stop_gps": "(28.717917, 28.717917)",
+    "end_stop_gps": "(28.698384, 28.698384)"
+  },
+  {
+    "route_id": "5913",
+    "route_name": "0901(NS)DOWN",
+    "num_of_stops": 0,
+    "air_conditioned": 1,
+    "agency": "DTC",
+    "fare": 13.5,
+    "direction": "DOWN",
+    "start_stop_gps": "(28.717917, 28.717917)",
+    "end_stop_gps": "(28.698384, 28.698384)"
+  }
+]

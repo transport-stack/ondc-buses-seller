@@ -1,0 +1,33 @@
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+# 4 space indentation
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 150
+
+
+# 2 space indentation for JavaScript, HTML, CSS, and JSON files
+[*.{js,html,css,json}]
+indent_style = space
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# YAML files often use 2 spaces
+[*.yml]
+indent_style = space
+indent_size = 2
+
+# Django template files
+[*.html]
+indent_size = 2 # Django templates mix HTML and template tags, adjust as needed

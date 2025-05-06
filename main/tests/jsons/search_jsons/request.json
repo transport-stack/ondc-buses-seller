@@ -1,0 +1,93 @@
+{
+  "context": {
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:011"
+      }
+    },
+    "domain": "ONDC:TRV11",
+    "timestamp": "2024-06-03T11:00:13.122Z",
+    "bap_id": "pre-prod-ondc-buyer-api.chartr.in",
+    "transaction_id": "e3741432-3998-47ab-a448-c52cb688fab2",
+    "message_id": "ab5a1242-e23c-43d8-8edb-1c54715a46bf",
+    "version": "2.0.0",
+    "action": "search",
+    "bap_uri": "https://pre-prod-ondc-buyer-api.chartr.in/api/v1/ondc/buyer",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "intent": {
+      "fulfillment": {
+        "stops": [
+          {
+            "type": "START",
+            "location": {
+              "descriptor": {
+                "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+              }
+            }
+          },
+          {
+            "type": "END",
+            "location": {
+              "descriptor": {
+                "code": "TILAK_BRIDGE"
+              }
+            }
+          }
+        ],
+        "vehicle": {
+          "category": "BUS",
+          "registration": "None"
+        }
+      },
+      "payment": {
+        "tags": [
+          {
+            "descriptor": {
+              "code": "BUYER_FINDER_FEES"
+            },
+            "display": false,
+            "list": [
+              {
+                "descriptor": {
+                  "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                },
+                "value": "1"
+              },
+              {
+                "descriptor": {
+                  "code": "BUYER_FINDER_FEES_TYPE"
+                },
+                "value": "percent-annualized"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "SETTLEMENT_TERMS"
+            },
+            "display": false,
+            "list": [
+              {
+                "descriptor": {
+                  "code": "DELAY_INTEREST"
+                },
+                "value": "0.0"
+              },
+              {
+                "descriptor": {
+                  "code": "STATIC_TERMS"
+                },
+                "value": "https://api.example-bap.com/booking/terms"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

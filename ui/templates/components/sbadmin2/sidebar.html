@@ -1,0 +1,46 @@
+{% load static %}
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion {% if is_mobile %}toggled{% endif %}"
+    id="accordionSidebar">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+        <img src="{% static 'img/logo.png' %}" width="50px" height="auto" />
+    </a>
+    <hr class="sidebar-divider" />
+    {% for url_item in sbadmin2_sidebar_urls %}
+    {% if url_item.type == "LINK" %}
+    <li class="nav-item {% if current_url == url_item.href %}active{% endif %}">
+        <a class="nav-link d-flex align-items-center" href="{{url_item.href}}">
+            <i class="{{ url_item.icon }}"></i>
+            <span class="ml-1">{{ url_item.name }}</span>
+            {% if url_item.badge %}
+            <span class="badge badge-light small ml-auto">{{url_item.badge}}</span>
+            {% endif %}
+        </a>
+    </li>
+    {% elif url_item.type == "BREAK" %}
+    <hr class="sidebar-divider" />
+    {% elif url_item.type == "HEADING" %}
+    <div class="sidebar-heading">{{ url_item.name }}</div>
+    {% elif url_item.type == "DROP_LINK" %}
+    <li class="nav-item">
+        <a class="nav-link {% if url_item.has_child_active %}{% else %}collapsed{% endif %}" href="#"
+            data-toggle="collapse" data-target="#collapse{{ forloop.counter }}" aria-expanded="true"
+            aria-controls="collapse{{ forloop.counter }}">
+            <i class="{{ url_item.icon }}"></i>
+            <span>{{ url_item.name }}</span>
+        </a>
+        <div id="collapse{{ forloop.counter }}" class="collapse {% if url_item.has_child_active %}show{% endif %}"
+            aria-labelledby="heading{{ forloop.counter }}" data-parent="#accordionSidebar">
+            <div class="collapse-inner rounded bg-white">
+                {% for url_child in url_item.childs %}
+                <a class="collapse-item {% if current_url == url_child.href %}active{% endif %}"
+                    href="{{url_child.href}}">{{url_child.name }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </li>
+    {% endif %} {% endfor %}
+    <hr class="sidebar-divider d-none d-md-block" />
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+</ul>

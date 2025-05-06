@@ -1,0 +1,25 @@
+{
+    "message": {
+        "ack": {
+            "status": "ACK",
+            "tags": [
+                {
+                    "display": true,
+                    "descriptor": "string",
+                    "list": [
+                        {
+                            "descriptor": "string",
+                            "value": "string",
+                            "display": true
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "error": {
+        "code": "string",
+        "paths": "string",
+        "message": "string"
+    }
+}

@@ -1,0 +1,131 @@
+{
+  "context": {
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:011"
+      }
+    },
+    "domain": "ONDC:TRV11",
+    "action": "confirm",
+    "version": "2.0.0",
+    "bap_id": "pre-prod-ondc-buyer-api.chartr.in",
+    "bap_uri": "https://pre-prod-ondc-buyer-api.chartr.in/api/v1/ondc/buyer",
+    "bpp_id": "pre-prod-ondc-ticketing-api.delhitransport.in",
+    "bpp_uri": "https://pre-prod-ondc-ticketing-api.delhitransport.in/",
+    "transaction_id": "3bf64562-e893-4670-8333-580483872830",
+    "message_id": "2822577f-59c4-4205-b8fe-200242f0bdbc",
+    "timestamp": "2024-06-12T11:00:58.593Z",
+    "ttl": "PT30S"
+  },
+  "message": {
+    "order": {
+      "items": [
+        {
+          "id": "I5",
+          "quantity": {
+            "selected": {
+              "count": 1
+            }
+          }
+        }
+      ],
+      "provider": {
+        "id": "P1"
+      },
+      "payments": [
+        {
+          "id": "PA1",
+          "collected_by": "BAP",
+          "status": "PAID",
+          "type": "PRE-ORDER",
+          "params": {
+            "transaction_id": "24060316303S5LGV",
+            "currency": "INR",
+            "amount": "10.0"
+          },
+          "tags": [
+            {
+              "descriptor": {
+                "code": "BUYER_FINDER_FEES"
+              },
+              "display": false,
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                  },
+                  "value": "1"
+                },
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES_TYPE"
+                  },
+                  "value": "percent-annualized"
+                }
+              ]
+            },
+            {
+              "descriptor": {
+                "code": "SETTLEMENT_TERMS"
+              },
+              "display": false,
+              "list": [
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_WINDOW"
+                  },
+                  "value": "PT60M"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_BASIS"
+                  },
+                  "value": "Delivery"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_TYPE"
+                  },
+                  "value": "upi"
+                },
+                {
+                  "descriptor": {
+                    "code": "MANDATORY_ARBITRATION"
+                  },
+                  "value": "true"
+                },
+                {
+                  "descriptor": {
+                    "code": "COURT_JURISDICTION"
+                  },
+                  "value": "New Delhi"
+                },
+                {
+                  "descriptor": {
+                    "code": "DELAY_INTEREST"
+                  },
+                  "value": "0.0"
+                },
+                {
+                  "descriptor": {
+                    "code": "STATIC_TERMS"
+                  },
+                  "value": "https://www.abc.com/settlement-terms/"
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_AMOUNT"
+                  },
+                  "value": "9.0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

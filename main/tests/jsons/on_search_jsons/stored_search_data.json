@@ -1,0 +1,3383 @@
+{
+  "context": {
+    "location": {
+      "country": {
+        "code": "IND"
+      },
+      "city": {
+        "code": "std:011"
+      }
+    },
+    "domain": "ONDC:TRV11",
+    "timestamp": "2024-06-03T11:00:13.239Z",
+    "bap_id": "pre-prod-ondc-buyer-api.chartr.in",
+    "transaction_id": "e3741432-3998-47ab-a448-c52cb688fab2",
+    "message_id": "ab5a1242-e23c-43d8-8edb-1c54715a46bf",
+    "version": "2.0.0",
+    "action": "on_search",
+    "bap_uri": "https://pre-prod-ondc-buyer-api.chartr.in/api/v1/ondc/buyer",
+    "ttl": "PT30S",
+    "bpp_id": "pre-prod-ondc-ticketing-api.delhitransport.in",
+    "bpp_uri": "https://pre-prod-ondc-ticketing-api.delhitransport.in/"
+  },
+  "message": {
+    "catalog": {
+      "descriptor": {
+        "name": "Transport Dept.",
+        "images": [
+          {
+            "url": "https://transitsolutions.in/logos/logo.ico",
+            "size_type": "xs"
+          }
+        ]
+      },
+      "providers": [
+        {
+          "id": "P1",
+          "descriptor": {
+            "name": "Delhi Transport Corporation",
+            "images": [
+              {
+                "url": "https://dtc.delhi.gov.in/sites/default/files/DTC/logo/dtc_logo_2.png",
+                "size_type": "xs"
+              }
+            ]
+          },
+          "items": [
+            {
+              "id": "I1",
+              "descriptor": {
+                "name": "403UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F1"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "10.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I2",
+              "descriptor": {
+                "name": "403UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F2"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "15.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I3",
+              "descriptor": {
+                "name": "405AUP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F3"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "10.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I4",
+              "descriptor": {
+                "name": "405AUP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F4"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "15.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I5",
+              "descriptor": {
+                "name": "419UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F5"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "10.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I6",
+              "descriptor": {
+                "name": "419UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F6"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "15.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I7",
+              "descriptor": {
+                "name": "425UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F7"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "10.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I8",
+              "descriptor": {
+                "name": "425UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F8"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "15.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I9",
+              "descriptor": {
+                "name": "429UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F9"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "10.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I10",
+              "descriptor": {
+                "name": "429UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F10"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "15.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I11",
+              "descriptor": {
+                "name": "502UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F11"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "10.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I12",
+              "descriptor": {
+                "name": "502UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F12"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "15.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I13",
+              "descriptor": {
+                "name": "0419(NS)UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F13"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "10.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I14",
+              "descriptor": {
+                "name": "0419(NS)UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F14"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "15.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I15",
+              "descriptor": {
+                "name": "0502(NS)UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F15"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "10.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            },
+            {
+              "id": "I16",
+              "descriptor": {
+                "name": "0502(NS)UP",
+                "code": "SJT",
+                "images": [
+                  {
+                    "url": "https://transitsolutions.in/logos/logo.icon",
+                    "size_type": "xs"
+                  }
+                ]
+              },
+              "fulfillment_ids": [
+                "F16"
+              ],
+              "price": {
+                "currency": "INR",
+                "value": "15.0"
+              },
+              "quantity": {
+                "maximum": {
+                  "count": 1
+                },
+                "minimum": {
+                  "count": 1
+                }
+              },
+              "time": {
+                "label": "Validity",
+                "duration": "PT2D"
+              }
+            }
+          ],
+          "fulfillments": [
+            {
+              "id": "F1",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "NAC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5159"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F2",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "AC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5159"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F3",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "NAC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5161"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F4",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "AC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5161"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F5",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "NAC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5166"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F6",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "AC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5166"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F7",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "NAC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5168"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F8",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "AC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5168"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F9",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "NAC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5171"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F10",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "AC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5171"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F11",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "NAC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5197"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F12",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "AC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5197"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F13",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "NAC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5446"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F14",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "AC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5446"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F15",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "NAC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5447"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "F16",
+              "type": "TRIP",
+              "stops": [
+                {
+                  "type": "START",
+                  "location": {
+                    "descriptor": {
+                      "name": "Old Delhi Railway Station (T) H C Sen Marg",
+                      "code": "OLD_DELHI_RAILWAY_STATION_T_H_C_SEN_MARG"
+                    },
+                    "gps": "28.658842, 28.658842"
+                  },
+                  "id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 1"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Red Fort",
+                      "code": "RED_FORT"
+                    },
+                    "gps": "28.658080, 28.658080"
+                  },
+                  "id": "2",
+                  "parent_stop_id": "1"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 2"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Jama Masjid",
+                      "code": "JAMA_MASJID"
+                    },
+                    "gps": "28.650847, 28.650847"
+                  },
+                  "id": "3",
+                  "parent_stop_id": "2"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 3"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Darya Ganj",
+                      "code": "DARYA_GANJ"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "4",
+                  "parent_stop_id": "3"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 4"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "GOLCHA CINEMA",
+                      "code": "GOLCHA_CINEMA"
+                    },
+                    "gps": "28.644833, 28.644833"
+                  },
+                  "id": "5",
+                  "parent_stop_id": "4"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 5"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Delhi Gate",
+                      "code": "DELHI_GATE"
+                    },
+                    "gps": "28.637446, 28.637446"
+                  },
+                  "id": "6",
+                  "parent_stop_id": "5"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 6"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "Express Building-DC2809",
+                      "code": "EXPRESS_BUILDING_DC2809"
+                    },
+                    "gps": "28.632616, 28.632616"
+                  },
+                  "id": "7",
+                  "parent_stop_id": "6"
+                },
+                {
+                  "type": "INTERMEDIATE_STOP",
+                  "instructions": {
+                    "name": "Stop 7"
+                  },
+                  "location": {
+                    "descriptor": {
+                      "name": "ITO BSZ Marg",
+                      "code": "ITO_BSZ_MARG"
+                    },
+                    "gps": "0.000000, 0.000000"
+                  },
+                  "id": "8",
+                  "parent_stop_id": "7"
+                },
+                {
+                  "type": "END",
+                  "location": {
+                    "descriptor": {
+                      "name": "Tilak Bridge",
+                      "code": "TILAK_BRIDGE"
+                    },
+                    "gps": "28.623715, 28.623715"
+                  },
+                  "id": "9",
+                  "parent_stop_id": "8"
+                }
+              ],
+              "vehicle": {
+                "category": "BUS",
+                "variant": "AC",
+                "registration": "None"
+              },
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "ROUTE_INFO"
+                  },
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_ID"
+                      },
+                      "value": "5447"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "ROUTE_DIRECTION"
+                      },
+                      "value": "UP"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_START_TIME"
+                      },
+                      "value": "2024-06-03T06:00:00.000Z"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "OPERATIONAL_END_TIME"
+                      },
+                      "value": "2024-06-03T23:00:00.000Z"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "payments": [
+            {
+              "collected_by": "BAP",
+              "tags": [
+                {
+                  "descriptor": {
+                    "code": "BUYER_FINDER_FEES"
+                  },
+                  "display": false,
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "BUYER_FINDER_FEES_PERCENTAGE"
+                      },
+                      "value": "1"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "BUYER_FINDER_FEES_TYPE"
+                      },
+                      "value": "percent-annualized"
+                    }
+                  ]
+                },
+                {
+                  "descriptor": {
+                    "code": "SETTLEMENT_TERMS"
+                  },
+                  "display": false,
+                  "list": [
+                    {
+                      "descriptor": {
+                        "code": "SETTLEMENT_WINDOW"
+                      },
+                      "value": "PT30D"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "SETTLEMENT_BASIS"
+                      },
+                      "value": "INVOICE_RECEIPT"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "MANDATORY_ARBITRATION"
+                      },
+                      "value": "TRUE"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "COURT_JURISDICTION"
+                      },
+                      "value": "New Delhi"
+                    },
+                    {
+                      "descriptor": {
+                        "code": "STATIC_TERMS"
+                      },
+                      "value": "https://api.transit-solutions.com/booking/terms"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

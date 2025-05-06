@@ -1,0 +1,43 @@
+{% extends "base/base.html" %} {% load static %} {% block content %}
+<div class="conatiner-fluid" style="overflow-x: hidden;">
+    <div class="d-flex align-items-center justify-content-center flex-column" style="min-height: 100vh">
+        <p>Login / Sign up</p>
+        <form method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            <div class="input-group">
+                <input type="phone" class="form-control py-4" style="min-width: 300px" placeholder="Username"
+                    name="username" autofocus="" autocapitalize="none" autocomplete="username" required=""
+                    id="id_username" />
+            </div>
+            <div class="input-group mt-2">
+                <input type="password" class="form-control py-4" style="min-width: 300px" placeholder="Password"
+                    name="password" autocomplete="current-password" required="" id="id_password" />
+            </div>
+            <input type="hidden" name="next" value="{{ next }}" />
+            <div class="small mt-2">
+                <a class="text-primary" href="{% url 'forgot_password' %}">Forgot your
+                    password?</a>
+            </div>
+            <input type="submit" class="btn btn-success w-100 mt-4" value="Login" />
+        </form>
+        <div class="px-3 mt-5">
+            {% if form.errors %}
+            <div class="alert small alert-danger" role="alert">
+                Account not activated or invalid username/password!
+            </div>
+            {% endif %}
+            {% if next %}
+            {% if user.is_authenticated %}
+            <div class="alert small alert-warning px-3" role="alert">
+                Your account doesn't have access to this page.
+            </div>
+            {% else %}
+            <div class="alert small alert-warning" role="alert">
+                Please login to continue.
+            </div>
+            {% endif %}
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

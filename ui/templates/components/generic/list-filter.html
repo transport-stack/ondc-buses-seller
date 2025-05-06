@@ -1,0 +1,22 @@
+<div class="card mb-4">
+    <a href="#collapseFilter" class="d-block card-header py-3 collapsed" data-toggle="collapse" role="button"
+        aria-expanded="true" aria-controls="collapseFilter">
+        <h6 class="m-0 font-weight-bold text-primary">{{heading}} Filters</h6>
+    </a>
+    <div class="collapse" id="collapseFilter">
+        <div class="card-body">
+            <form action="" method="get">
+                <div class="form-row">
+                    {% for field in filter_form %}
+                    <div class="form-group col-4">{{ field.label_tag }} {{ field }}</div>
+                    {% endfor %}
+                    <div class="form-group col-auto d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary px-3">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

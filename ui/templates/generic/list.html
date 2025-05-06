@@ -1,0 +1,145 @@
+{% extends extend_template_name %} {% load static %} {% load crispy_forms_tags %}
+{% load custom_tags %} {% block style %}
+<link href="{% static 'datatables/dataTables.bootstrap4.min.css'%}" rel="stylesheet" type="text/css" />
+{% if filter_form %}
+{{ filter_form.media.css }}
+{% endif %}
+{% endblock %} {% block content %}
+<div class="container-fluid mt-4">
+    <div class="d-flex align-items-center mb-4">
+        <h1 class="h3 mb-0 text-gray-800">{{ heading }}</h1>
+        <a href="{% get_data_export_url request %}" target="_blank" class="btn btn-sm btn-success shadow-sm ml-auto">
+            <i class="fas fa-download fa-sm text-white-50"></i>
+            Export
+        </a>
+        {% if add_url %}
+        <a href="{% url add_url %}" class="btn btn-sm btn-primary ml-2 shadow-sm">
+            <i class="fas fa-plus fa-sm text-white-50"></i>
+            Add <span class="d-none d-lg-inline-block">{{heading}}</span>
+        </a>
+        {% endif %}
+    </div>
+
+    {% if filter_form %}
+    {% include "components/generic/list-filter.html" %}
+    {% endif %}
+
+    <form method="get" class="d-flex align-items-center">
+        <label class="mb-0">Search:</label><input type="search" id="searchBox" name="search"
+            value="{% if search_value %}{{search_value}}{% endif %}" class="form-control form-control-sm ml-2"
+            placeholder="Search using {{ search_field_label }}...">
+        <button class="btn btn-primary btn-sm ml-2" type="submit" onclick="searchClick(event)">Search</button>
+    </form>
+    <div class="table-responsive mt-3">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                    {% if table.data|length > 0 %}
+                    {% if view_url %}
+                    <th>View</th>
+                    {% endif %}
+                    {% for field in table.fields %}
+                    {% if forloop.counter0 > 0 %}
+                    <th>{{field}}</th>
+                    {% endif %}
+                    {% endfor %}
+                    {% else %}
+                    <th class="text-center">NO DATA</th>
+                    {% endif %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for instance in table.data %}
+                <tr>
+                    {% if view_url %}
+                    <td class="text-center">
+                        <a href="{% url view_url instance.0 %}">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </td>
+                    {% endif %}
+
+                    {% for data in instance %}
+                    {% if forloop.counter0 > 0 %}
+                    {% if data == None %}
+                    <td>---</td>
+                    {% else %}
+                    <td>{{data}}</td>
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+
+                    {% if edit_url %}
+                    <td class="text-center">
+                        <a href="{% url edit_url instance.0 %}" class="text-warning">
+                            <i class="fas fa-pen"></i>
+                        </a>
+                    </td>
+                    {% endif %}
+
+                    {% if delete_url %}
+                    <td class="text-center">
+                        <a href="{% url delete_url instance.0 %}" class="text-danger">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                    </td>
+                    {% endif %}
+
+                    {% for _, action in action_urls.items %}
+                    <td class="text-center">
+                        <a href="{% url action.reverse_url instance.0 %}" target="_blank">
+                            {% if action.favicon_class %}
+                            <i class="{{action.favicon_class}}"></i>
+                            {% else %}
+                            {{action.text}}
+                            {% endif %}
+                        </a>
+                    </td>
+                    {% endfor %}
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% if page_obj %}
+        {% include "components/generic/list-pagination.html" %}
+        {% endif %}
+    </div>
+</div>
+{% endblock content %} {% block scripts %}
+<script src="{% static 'datatables/dataTables.min.js' %}"></script>
+<script src="{% static 'datatables/dataTables.bootstrap4.min.js' %}"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#dataTable").DataTable({
+            "lengthMenu": [[25], [25]],
+            "ordering": false,
+            "bInfo": false,
+            "paging": false,
+            "searching": false
+        });
+    });
+    function replaceUrlParam(url, paramName, paramValue) {
+        if (paramValue == null) {
+            paramValue = '';
+        }
+        var pattern = new RegExp('\\b(' + paramName + '=).*?(&|#|$)');
+        if (url.search(pattern) >= 0) {
+            return url.replace(pattern, '$1' + paramValue + '$2');
+        }
+        url = url.replace(/[?#]$/, '');
+        return url + (url.indexOf('?') > 0 ? '&' : '?') + paramName + '=' + paramValue;
+    }
+    function searchClick(event) {
+        event.preventDefault();
+        let searchVal = $('#searchBox').val();
+        window.location.href = replaceUrlParam(window.location.href, "search", searchVal);
+    }
+
+</script>
+{% if filter_form %}
+{{ filter_form.media.js }}
+{% endif %}
+{% endblock %}

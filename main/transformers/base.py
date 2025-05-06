@@ -1,0 +1,6 @@
+class RequestBodyTransformer:
+    def chartr_to_ondc(self, *args, **kwargs):
+        ...
+
+    def ondc_to_chartr(self, *args, **kwargs):
+        ...

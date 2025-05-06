@@ -1,0 +1,18 @@
+{% extends extend_template_name %}
+{% load crispy_forms_tags %}
+{% block style %}
+{{ form.media.css }}
+{% endblock %}
+{% block content %}
+<div class="container-fluid mt-4">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">{{heading}}</h1>
+    </div>
+    <div class="row">
+        <div class="col">{% crispy form %}</div>
+    </div>
+</div>
+{% endblock content %}
+{% block scripts %}
+{{ form.media.js }}
+{% endblock %}
