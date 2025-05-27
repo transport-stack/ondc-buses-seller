@@ -74,3 +74,74 @@
 - Now you can start working by creating a new branch for yourself
 - Branch naming convention would be like `dev_<yourname>`
 - `git checkout -b dev_<yourname>`
+
+
+
+# ONDC Seller API Endpoints
+
+## 2.1.1 Search (1)
+
+**Objective:** Provide the user with all available stops and routes data.
+
+**Description:**
+
+* Returns every stop and its associated routes when no specific origin or destination is provided.
+* Useful for fetching the complete network dataset.
+
+---
+
+## 2.1.2 Search (2)
+
+**Objective:** Provide real-time bus search capabilities based on user queries.
+
+**Description:**
+
+* Accepts start and end stop parameters.
+* Returns all possible routes connecting those stops, intermediate stops, fare details, and GPS coordinates.
+
+---
+
+## 2.1.3 Select
+
+**Objective:** Allow users to select the route through which they want to travel.
+
+**Description:**
+
+* Manages user session state for route selection.
+* Applies reservation timeout to release holds automatically.
+* Returns the chosen route’s fare breakup and verifies the transaction session.
+
+---
+
+## 2.1.4 Init
+
+**Objective:** Initiate bus ticket booking.
+
+**Description:**
+
+* Calculates total fare based on passenger count.
+* Sends fare details to the buyer app to begin payment.
+* Updates settlement terms if provided by the buyer.
+
+---
+
+## 2.1.5 Confirm
+
+**Objective:** Confirm the bus ticket booking.
+
+**Description:**
+
+* Triggered after payment completion on the buyer side.
+* Generates a PNR and returns a ticket (QR code) to the buyer.
+* Supports multiple payment methods (UPI, credit/debit cards).
+
+---
+
+## 2.1.6 Update
+
+**Objective:** Update an existing ticket booking.
+
+**Description:**
+
+* Accepts update requests from the buyer.
+* Processes changes and returns the updated ticket details to the buyer.
