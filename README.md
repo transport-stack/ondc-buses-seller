@@ -3,7 +3,7 @@
 ## Step1:
 - Cloning the project (generate SSH Key on your system and add it to your profile on the code station)
 
-  `git clone https://gitlab.com/chartrmobility/ondc/ondc-chartr-seller`
+  `git clone https://github.com/transport-stack/ondc-buses-seller.git`
 - Ask the project maintainer for the latest working branch and checkout to that branch.
 - Once clone is done make a `./envs/.env.common` file copying from the `./envs/.env.common.sample` file
     ```bash
